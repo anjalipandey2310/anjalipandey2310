@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anjali Pandey | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #0f0f0f;
+      --primary: #ffbb00;
+      --text-light: #eeeeee;
+      --accent: #ff6f61;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--bg-color);
+      color: var(--text-light);
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: var(--primary);
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #aaa;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: var(--primary);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      border-bottom: 1px solid #222;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project {
+      background-color: #1a1a1a;
+      margin: 15px 0;
+      padding: 15px;
+      border-left: 4px solid var(--primary);
+    }
+
+    .project h3 {
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #111;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" alt="IMG-20251006-WA0000.jpg" class="profile-img" />
+    <h1>Anjali Pandey</h1>
+    <p>Fresher | Web Developer | Dreaming Big</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate fresher who believes in learning by doing. I love building websites and bringing creative ideas to life using code. Currently looking for an opportunity to grow and contribute to real-world projects.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Digital Marketing, Data Entry</li>
+      <li>Responsive Web Design</li>
+      <li>Git </li>
+      <li>My SQL<li>
+      <li>C Language, C++<li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>🎨 Portfolio Website</h3>
+      <p>This website you’re viewing right now! Made using only HTML and CSS.</p>
+    </div>
+
+    <div class="project">
+      <h3>📝 To-Do App</h3>
+      <p>A simple to-do list app built using JavaScript to manage daily tasks.</p>
+    </div>
+
+    <div class="project">
+      <h3>🧮 Calculator</h3>
+      <p>A basic calculator made using HTML/CSS/JS — great for practicing logic.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 Email: 2310anjalipandey@gmail.com <br/>
+      💼 LinkedIn: <a href="https://www.linkedin.com/in/anjali-pandey-867068389" target="_blank">linkedin.com/in/anjali-pandey-867068389</a><br/>
+      💻 GitHub: <a href="https://github.com/anjalipandey2310" target="_blank">github.com/anjalipandey2310</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Mukherjee | Made with ❤️
+  </footer>
+
+</body>
+</html>
