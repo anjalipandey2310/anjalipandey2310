@@ -1,16 +1,23 @@
-## Hi there 👋
+# 👋 Hi, I'm Anjali Pandey  
+Aspiring Software Developer | Frontend Enthusiast | Passionate about building clean and efficient web applications.  
 
-<!--
-**anjalipandey2310/anjalipandey2310** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+### 🚀 Skills & Technologies  
+- HTML, CSS, JavaScript  
+- Java, C Language  
+- MySQL  
+- Data Entry & Digital Marketing  
+- Frontend Development  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 📫 How to reach me  
+- Email: 2310anjalipandey@gmail.com  
+- LinkedIn: [anjali-pandey](https://www.linkedin.com/in/anjali-pandey-867068389)  
+- Portfolio: Coming Soon  
+
+---
+
+### 💼 Looking for  
+Opportunities as a Software Developer / Frontend Developer to learn and contribute to meaningful projects.  
