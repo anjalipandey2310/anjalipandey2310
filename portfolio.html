@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anjali Pandey — Design Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- Base / Reset ---------- */
+    :root{
+      --bg: #050505;
+      --muted: #9a9a9a;
+      --accent: #e6e6e6;
+      --max-width: 1100px;
+    }
+    *{box-sizing: border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      background:var(--bg);
+      color:var(--accent);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{width:100%;max-width:var(--max-width)}
+
+    /* ---------- Typography ---------- */
+    h1,h2,h3{font-family: "Playfair Display", serif; color:var(--accent); letter-spacing: -0.02em}
+    h1{font-size:48px; font-weight:700; margin-bottom:18px}
+    h2{font-size:36px; margin-bottom:12px}
+    h3{font-size:20px; margin-bottom:8px}
+    p{color:var(--muted); font-size:16px}
+    .eyebrow{font-size:13px; color:var(--muted); margin-bottom:6px}
+
+    /* ---------- Header / Hero ---------- */
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:40px;
+      align-items:center;
+      margin-bottom:48px;
+    }
+    .hero .intro{
+      padding-right:10px;
+    }
+    .badge{
+      display:inline-block;
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.08);
+      color:var(--muted);
+      font-size:13px;
+      margin-bottom:18px;
+    }
+    .cta-line{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:14px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    /* ---------- Oval Image ---------- */
+    .portrait-wrap{
+      display:flex;
+      justify-content:center;
+    }
+    .portrait{
+      width:320px;
+      height:420px;
+      border-radius:50%;
+      overflow:hidden;
+      display:block;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      border: 6px solid rgba(255,255,255,0.03);
+      background: linear-gradient(180deg,#111 0%, #0a0a0a 100%);
+    }
+    .portrait img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    /* ---------- Sections ---------- */
+    section{
+      margin-bottom:42px;
+      display:flex;
+      gap:40px;
+      align-items:flex-start;
+    }
+    .section-left{flex:1; max-width:600px}
+    .section-right{width:360px; display:flex; justify-content:center}
+
+    /* Background list styles */
+    .timeline{
+      color:var(--muted);
+      font-size:15px;
+      list-style:none;
+      padding-left:0;
+    }
+    .timeline li{margin-bottom:12px}
+    .timeline b{color:var(--accent); display:block; margin-bottom:4px; font-weight:600}
+
+    /* Skills */
+    .skills-list{display:flex;flex-direction:column;gap:10px;color:var(--muted)}
+    .skill-item{display:flex;gap:10px;align-items:center}
+    .skill-dot{width:8px;height:8px;border-radius:50%;background:var(--accent); opacity:0.9}
+
+    /* Contact / footer */
+    footer{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:40px;
+      align-items:start;
+      margin-top:30px;
+      padding-top:24px;
+      border-top:1px solid rgba(255,255,255,0.03);
+    }
+    .contact-list{display:flex; gap:28px; color:var(--muted); font-size:14px; flex-wrap:wrap}
+    .contact-item{min-width:120px}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr 320px}
+      .portrait{width:280px;height:360px}
+      .section-right{width:300px}
+      footer{grid-template-columns:1fr}
+    }
+    @media (max-width:680px){
+      body{padding:24px}
+      .hero{grid-template-columns:1fr; gap:18px; text-align:left}
+      .portrait-wrap{justify-content:flex-start}
+      .portrait{width:210px;height:260px}
+      section{flex-direction:column; gap:18px}
+      .section-right{width:100%}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .big-quote{font-size:20px; color:var(--accent); line-height:1.6}
+    .spacer{height:8px}
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+
+    <!-- HERO -->
+    <header class="hero" aria-label="Introduction">
+      <div class="intro">
+        <div class="badge">Software developer / Web Developer</div>
+        <h1>Welcome to<br>My Design Portfolio</h1>
+        <p class="eyebrow">I'm Anjali Pandey — a Web Developer and BCA graduate passionate about creating clean, responsive, and user-friendly websites.</p>
+
+        <div class="cta-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden style="opacity:.6"><path d="M12 2v20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <span class="muted">Work with me today</span>
+        </div>
+      </div>
+
+      <div class="portrait-wrap">
+        <!-- Replace src with your photo path -->
+        <figure class="portrait" aria-hidden="false">
+          <img src="IMG-20251006-WA0000.jpg" alt="Anjali Pandey — profile photo" />
+        </figure>
+      </div>
+    </header>
+
+    <!-- WHO IS -->
+    <section aria-labelledby="who">
+      <div class="section-left">
+        <h2 id="who">Who is Anjali?</h2>
+        <p class="big-quote">I'm Anjali Pandey, a Web Developer and BCA graduate passionate about blending creativity with code to build meaningful digital experiences.</p>
+      </div>
+      <div class="section-right">
+        <figure class="portrait" style="width:280px;height:350px">
+          <img src="IMG-20251006-WA0000.jpg" alt="Anjali Pandey" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section aria-labelledby="background">
+      <div class="section-left">
+        <h2 id="background">My Background</h2>
+
+        <ul class="timeline" aria-hidden="false">
+          <li>
+            <b>Education</b>
+            <div class="muted">BCA - Mahatma Gandhi Kashi Vidyapith (MGKVP), Varanasi — 2021</div>
+            <div class="muted">Senior Secondary (Science) — 2018</div>
+          </li>
+
+          <li style="margin-top:10px">
+            <b>Work Experience</b>
+            <div class="muted">Intern / Frontend Developer — Freelance projects and university assignments</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-right">
+        <!-- small image variant for symmetry -->
+        <figure class="portrait" style="width:220px;height:280px">
+          <img src="IMG-20251006-WA0000.jpg" alt="Profile side image" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section aria-labelledby="skills">
+      <div class="section-left">
+        <h2 id="skills">My Skills</h2>
+
+        <div class="skills-list">
+          <div class="skill-item">
+            <span class="skill-dot" aria-hidden></span>
+            <div>
+              <strong>Frontend</strong>
+              <div class="muted">HTML | CSS | JavaScript | Responsive Design</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-dot" aria-hidden></span>
+            <div>
+              <strong>Database</strong>
+              <div class="muted">MySQL</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-dot" aria-hidden></span>
+            <div>
+              <strong>Tools</strong>
+              <div class="muted">MS Excel | Google Sheets | Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-right">
+        <!-- another portrait to match design -->
+        <figure class="portrait" style="width:220px;height:280px">
+          <img src="IMG-20251006-WA0000.jpg" alt="Anjali" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- INTRO CTA -->
+    <section>
+      <div class="section-left">
+        <h2>I'm Anjali Pandey, a Web Developer and BCA graduate</h2>
+        <p class="muted">Passionate about creating clean, responsive websites and blending creativity with code to deliver thoughtful digital experiences.</p>
+      </div>
+      <div class="section-right">
+        <figure class="portrait" style="width:220px;height:280px">
+          <img src="img/profile.jpg" alt="Anjali smiling" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer>
+      <div>
+        <h3>Reach Out to Me</h3>
+        <div class="spacer"></div>
+        <p class="muted">Interested in working together? Send me a message — I usually reply within a few days.</p>
+
+        <div style="height:18px"></div>
+
+        <div class="contact-list" role="list">
+          <div class="contact-item">
+            <div class="muted">Address</div>
+            <div>pathkhauli, Maharanganj, bhadohi, Uttar Pradesh 221314</div>
+          </div>
+
+          <div class="contact-item">
+            <div class="muted">Email</div>
+            <div><a href="mailto:2310anjalipandey@gmail.com" style="color:inherit; text-decoration:underline;">2104anjalipandey@gmail.com</a></div>
+          </div>
+
+          <div class="contact-item">
+            <div class="muted">Phone</div>
+            <div><a href="tel:+918604551354" style="color:inherit; text-decoration:underline;">5604550254</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:center;">
+        <figure class="portrait" style="width:320px;height:420px">
+          <img src="IMG-20251006-WA0000.jpg" alt="Anjali portrait" />
+        </figure>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
